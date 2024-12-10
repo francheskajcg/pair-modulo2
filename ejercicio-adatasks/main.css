@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 20px;
+  background-color: darkcyan;
+  color: white;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background-color: lightgray;
+}
+
+.main-blocks {
+  display: inline-flex;
+  gap: 20px;
+  align-items: baseline;
+  width: max-content;
+  margin-block: 20px;
+  margin-inline: 15%;
+}
+
+.first-block {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  padding-block: 10px;
+  padding-inline: 30px;
+  gap: 5px;
+}
+
+.btn-add {
+  background-color: darkturquoise;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.second-block {
+  display: inline-flex;
+  background-color: white;
+  padding-block: 10px;
+  padding-left: 20px;
+  padding-right: 100px;
+  gap: 10px;
+}
+
+.btn-search {
+  background-color: darkturquoise;
+  padding-block: 3px;
+  padding-inline: 7px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.task-ul {
+  list-style-type: none;
+}
+
+.list_container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+li:has(input:checked) {
+  text-decoration: line-through;
+}
