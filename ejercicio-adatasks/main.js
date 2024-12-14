@@ -13,7 +13,7 @@ let tasks = [];
 fetch('https://dev.adalab.es/api/todo/martaxxa')
     .then((response) => response.json())
     .then((data) => {
-        tasks = data;
+        tasks = data.results;
         let html = '';
         for (const addObj of tasks) {
             if(addObj.completed === true){  
